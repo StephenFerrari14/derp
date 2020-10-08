@@ -1,0 +1,49 @@
+function DirCollision(dir, p1, p2){
+	var one = p1;
+	var two = p2;
+	if(dir == "W"){
+		if(one.y <= two.y + two.height*0.5){
+			return 0;
+		}
+		if((one.x-one.width*0.5<two.x+two.width*0.5 && one.x+one.width*0.5>two.x-two.width*0.5) &&
+			one.y - (one.height * 0.5) - one.speed < two.y + two.height * 0.5){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+	if(dir == "A"){
+		if(one.x <= two.x - two.width*0.5){
+			return 0;
+		}
+		if((one.y-one.height*0.5 < two.y+two.height*0.5 && one.y+one.height*0.5>two.y-two.height*0.5) &&
+			one.x - (one.width * 0.5) - one.speed < two.x + two.width * 0.5){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+	if(dir == "S"){
+		if(one.y >= two.y + two.height*0.5){
+			return 0;
+		}
+		if((one.x-one.width*0.5 < two.x+two.width*0.5 && one.x+one.width*0.5>two.x-two.width*0.5) &&
+			one.y + (one.height * 0.5) + one.speed > two.y - two.height * 0.5){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+	if(dir == "D"){
+		if(one.x >= two.x + two.width*0.5){
+			return 0;
+		}
+		if((one.y-one.height*0.5 < two.y+two.height*0.5 && one.y+one.height*0.5>two.y-two.height*0.5) &&
+			one.x + (one.height * 0.5) + one.speed > two.x - two.width * 0.5){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+	return 0;
+};

@@ -1,0 +1,160 @@
+
+
+body
+{font-family: verdana, tahoma, arial, sans-serif;
+
+font-size: 10pt;
+
+margin: 0px;
+
+margin-left: 3px;
+
+margin-right: 3px;
+
+padding: 0px;}
+
+ 
+
+p
+{padding-top: 10px;
+
+margin: 0px;}
+
+ 
+
+table.navbar
+
+{font-size: 8pt;
+
+margin: 0px;
+
+padding: 0px;
+
+border: 0px;
+
+font-weight: bold;}
+
+ 
+
+table.menu
+{font-size: 8pt;
+
+margin: 0px;
+
+padding: 0px;
+
+font-weight: bold;}
+
+ 
+
+td.menuNormal
+
+{padding: 0px;
+
+color: white;
+
+font-weight: bold;
+
+vertical-align: top; /* Sets the vertical alignment to the top of the div */
+
+background-color: #0000FF;}
+
+ 
+
+td.menuHover
+
+{padding: 0px;
+
+color: black;
+
+font-weight: bold;
+
+vertical-align: top;
+
+/*remove the following line for drop-down menu with images*/
+
+background-color: lightblue;}
+
+ 
+
+div.menuNormal
+
+{display: none; /* States that this div should not display */
+
+position: static;} /* Tells the element to just flow with everything else */
+
+ 
+
+div.menuHover
+
+{border: 2.5px solid white;
+
+background-color: #0000FF;
+
+display: inline; /* Tells the div to generate an inline box with no line break*/
+
+position: absolute;} /* Positions the element relative to the parent */
+
+ 
+
+a.menuitem:link
+
+{text-decoration: none;
+
+color: white;
+
+padding: 2.5px;
+
+background-color: #0000FF;
+
+border-bottom: 2.5px solid white;
+
+display: block;} /* Display a line break before and after the box */
+
+ 
+
+a.menuitem:visited
+
+{text-decoration: none;
+
+color: white;
+
+padding: 2.5px;
+
+background-color: #0000FF;
+
+border-bottom: 2.5px solid white;
+
+display: block;} /* Display a line break before and after the box */
+
+ 
+
+a.menuitem:hover
+
+{text-decoration: none;
+
+color: black;
+
+padding: 2.5px;
+
+background-color: lightblue;
+
+border-bottom: 2.5px solid white;
+
+display: block;} /* Display a line break before and after the box */
+
+ 
+
+a.menuitem:active
+
+{text-decoration: none;
+
+color: black;
+
+padding: 2.5px;
+
+background-color: lightblue;
+
+border-bottom: 2.5px solid white;
+
+display: block;} /* Display a line break before and after the box */

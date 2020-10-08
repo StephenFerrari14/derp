@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<title>Bellel</title>
+<head>
+<h1 style="margin-bottom:0;background-color:#4169E1;">PBC</h1>
+<link rel="icon" type="image/png" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/garfCSS.css">
+
+<script src="libraries/jquery.js"></script>
+<script src="libraries/buzz.js"></script>
+<script>
+function openMen(){
+	alert("Something");
+}
+function openButton(){
+	alert(timer);
+}
+function expand(s)
+{
+$(".menuNormal").show();
+}
+function collapse(s)
+{
+$("div.menuNormal").hide();
+}
+function submit(){
+
+}
+</script>
+</head>
+<body bgcolor="#FF8C00">
+
+<div id="menu" style="background-color:#FFFFFF";>
+
+	<table class="menu" width="120">
+	<tr><td class="menuNormal" width="120" onmouseover="expand(this);" onmouseout="collapse(this);">
+	<p>Menu</p>
+		<div class="menuNormal" width="120">
+
+		<table class="menu" width="120">
+		<tr><td class="menuNormal">
+		<a href = "Blell.html" class="menuitem">Blell</a>
+		</td></tr>
+		</table>
+	
+		<table class="menu" width="120">
+		<tr><td class="menuNormal">
+		<a href = "Bellel.html" class="menuitem">About</a>
+		</td></tr>
+		</table>
+		</div>
+
+	</td></tr>
+	</table>
+	
+</div>
+
+<div id="leftarea" style = "background-color:#00CED1;float:left;height:500px;width: 300px;">
+<br>
+<!--action="html_form.action.asp" method="get" -->
+<form name="input">
+<fieldset>
+<legend>Information:</legend>
+Name: <input type="text" size="30"><br>
+E-mail: <input type="text" size="30"><br>
+Date of birth: <input type="text" size="10">
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+
+</div>
+<div id="gamearea" style="display:inline-block;width: 100px; height: 130px; padding: 10px;">
+<script type="text/javascript" src="javascript/Bellel.js"></script>
+</div>
+E
+<div id = "words" style = "background-color:#00CED1;height:500px;width:500px;float:right;">
+<p>PBC
+<br>
+Work in progress, coming up with ideas and such.
+<br>
+<br>
+Controls:
+WASD to move and others to do other stuff.
+<br>
+<br>
+What do?
+<br>
+<br>
+Created by Stoven
+</p>
+
+<button type = "button" onclick = "openMen()">Menu</button>
+<button type = "button" onclick = "openButton()">Button</button>
+</div>
+<div id = "bot" style = "background-color:#DCDCDC;text-align:center;clear:both">
+0.0.0.0 Nother Games. 2013
+</div>
+<font color = "#FF8C00">Brett I hope you can see this</a>
+</body>
+</html>
